@@ -14,6 +14,21 @@ body {
   box-sizing: border-box;
 }
 
+.backIconDiv{
+  cursor: pointer;
+  position: fixed;
+  top: 3%;
+  left: 5%;
+  z-index: 2;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 a {
   text-decoration: none;
   display: block;
@@ -84,6 +99,8 @@ button {
   top: -3.4%;
   right: 20px;
 }
+
+
 
 .pageContainer,
 .offers,
@@ -413,24 +430,29 @@ button {
 }
 
 .categoryListingImg {
-  width: 30%;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 1.5rem;
   object-fit: cover;
 }
 @media (min-width: 1024px) {
   .categoryListingImg {
-    width: 19%;
+    width: 216px;
     height: 217px;
   }
 }
 
+.listingsList{
+  margin-left: -3rem !important;
+}
+
 .categoryListingDetails {
-  width: 65%;
+  width: 70%;
+  padding-left: 1rem;
 }
 @media (min-width: 1024px) {
   .categoryListingDetails {
-    width: 79%;
+    width: 85%;
   }
 }
 
@@ -466,6 +488,7 @@ button {
 .categoryListingInfoText {
   font-weight: 500;
   font-size: 0.7rem;
+  white-space: nowrap;
 }
 
 .loadMore {

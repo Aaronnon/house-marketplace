@@ -9,6 +9,7 @@ import 'swiper/swiper-bundle.css'
 import { db } from '../firebase.config'
 import Spinner from '../components/Spinner'
 import shareIcon from '../assets/svg/shareIcon.svg'
+import back from '../assets/svg/back.svg'
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
 
 
@@ -68,6 +69,9 @@ function Listing() {
             >
                 <img src={shareIcon} alt='' />
             </div>
+
+            <Link className='backIconDiv' to='/offers'><img src={back} alt="" /></Link >
+
 
             {shareLinkCopied && <p className='linkCopied'>Link Copied!</p>}
 
