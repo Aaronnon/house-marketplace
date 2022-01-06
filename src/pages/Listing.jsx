@@ -70,7 +70,7 @@ function Listing() {
                 <img src={shareIcon} alt='' />
             </div>
 
-            <Link className='backIconDiv' to='/offers'><img src={back} alt="" /></Link >
+            <div className='backIconDiv' onClick={()=>navigate(-1)}><img src={back} alt="" /></div >
 
 
             {shareLinkCopied && <p className='linkCopied'>Link Copied!</p>}
