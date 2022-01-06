@@ -130,6 +130,7 @@ function CreateListing() {
             uploadTask.on(
               'state_changed',
               (snapshot) => {
+                  // eslint-disable-next-line
                 const progress =
                   (snapshot.bytesTransferred / snapshot.totalBytes) * 100
                 // console.log('Upload is ' + progress + '% done')
