@@ -7,6 +7,7 @@ import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import Navbar from './components/Navbar'
 import Category from './pages/Category'
+import CreateListing from './pages/CreateListing'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import PrivateRoute from './components/PrivateRoute'
@@ -26,6 +27,7 @@ function App() {
           </Route>
           <Route path='/sign-up' element={<SignUp />}></Route>
           <Route path='/forgot-password' element={<ForgotPassword />}></Route>
+          <Route path='/create-listing' element={<CreateListing />}></Route>
         </Routes>
         <Navbar />
       </Router>

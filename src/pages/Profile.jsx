@@ -4,6 +4,10 @@ import { useNavigate } from 'react-router-dom'
 import { updateDoc, doc } from 'firebase/firestore'
 import { db } from '../firebase.config'
 import { toast } from 'react-toastify';
+import arrowRight from '../assets/svg/keyboardArrowRightIcon.svg'
+import homeIcon from '../assets/svg/homeIcon.svg'
+import { Link } from 'react-router-dom'
+
 
 
 
@@ -47,10 +51,10 @@ function Profile() {
 
     const onChange = (e) => {
         setFormData((prevState) => ({
-          ...prevState,
-          [e.target.id]: e.target.value,
+            ...prevState,
+            [e.target.id]: e.target.value,
         }))
-      }
+    }
 
     return (
         <>
@@ -95,6 +99,11 @@ function Profile() {
                             />
                         </form>
                     </div>
+                    <Link to='/create-listing' className='createListing'>
+                        <img src={homeIcon} alt='home' />
+                        <p>Sell or rent your home</p>
+                        <img src={arrowRight} alt='arrow right' />
+                    </Link>
                 </main>
             </div>
         </>
